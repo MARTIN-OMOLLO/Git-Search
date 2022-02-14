@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { UserComponent } from './components/user/user.component';
+import { ColorDirective } from './directives/color.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DateAgoPipe,
     PageNotFoundComponent,
-    UserComponent
+    UserComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
