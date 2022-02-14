@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { UserComponent } from './components/user/user.component';
 import { ColorDirective } from './directives/color.directive';
 import { HttpClientModule } from '@angular/common/http';
+import { UserFetchService } from './services/user-fetch.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserFetchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
