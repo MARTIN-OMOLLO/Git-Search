@@ -1,27 +1,27 @@
-# GithubFinder
+# Github Finder
+Github Finder is a web app that allows users to search github profile and repos using the github username.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Screenshot
+![ScreenShot](https://github.com/Eugene-Oluoch/Github-Finder/blob/master/src/assets/finder.png)
+## LIVE DEMO
+[live](https://eugene-oluoch.github.io/Github-Finder)
+## Get Started
+To get a local copy to your machine.
+### Setup
+* Download or clone files from this repo.
+Repository link: [Quote](https://github.com/Eugene-Oluoch/Github-Finder)
+### Developed with
+* Angular
+* HTML for structure.
+* Scss for custom styles.
+* TypeScript and JavaScript for functionality and behaviour.
+### BDD
+* Objectives
+1. Users can search github profiles
+2. User can search repos.
+3. User can access the displayed profile link to github.
+## Author Info
+Author: Eugene Mark Oluoch
+Career: FullStack Developer
+Twitter: [Twitter](https://twitter.com/crabs_ke)
