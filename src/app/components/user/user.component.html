@@ -4,9 +4,9 @@
         <h4>Enter a username to fetch a <span>user profile</span> and <span>repos</span></h4>
     </article>
     <article class="search-input">
-        <form>
+        <form (submit)="searchUser($event,user.value)">
             <div>
-                <img src="magnify" alt="">
+                <img [src]="magnify" alt="">
                 <input type="text" placeholder="Search" #user>
             </div>
             <button type="submit">search</button>
@@ -16,40 +16,40 @@
 <section class="profile">
     <article class="profile-main">
         <div class="profile-main-image">
-            <img src="avatar" alt="profile pic">
+            <img [src]="avatar" alt="profile pic">
         </div>
         <div class="profile-main-button">
-            <a href="link" target="_blank">View Profile</a>
+            <a [href]="link" target="_blank">View Profile</a>
         </div>
     </article>
     <article class="profile-details">
-        <h1> name | titlecase </h1>
-        <h3> login </h3>
-        <p> bio </p>
+        <h1>{{ name | titlecase }}</h1>
+        <h3>{{ login }}</h3>
+        <p>{{ bio }}</p>
         <div>
-            <img src="followersImage" alt="" followers>
-            <p class="followers"> followers </p>
+            <img [src]="followersImage" alt="" followers>
+            <p class="followers">{{ followers }}</p>
             <p>followers</p>
-            <p class="following">. following </p>
+            <p class="following">.{{ following }}</p>
             <p>following</p>
         </div>
         <div>
-            <p>Created in: date | date</p>
+            <p>Created in: {{ date | date}}</p>
         </div>
-        <p class="ago"> date | dateAgo </p>
+        <p class="ago">{{ date | dateAgo }}</p>
     </article>
 </section>
-<section class="repo-title">
+<section class="repo-title" *ngIf="active">
     <h1>Latest Repos</h1>
 </section>
 <section class="repos">
     <ul>
-        <li class="li">
+        <li class="li" *ngFor="let repo of repos">
             <article class="li-title">
-                <h3> repo.name </h3>
+                <h3>{{ repo.name }}</h3>
             </article>
             <article class="li-button">
-                <button><a href="repo.html_url" target="_blank">open</a></button>
+                <button><a [href]="repo.html_url" target="_blank">open</a></button>
             </article>
         </li>
     </ul>
