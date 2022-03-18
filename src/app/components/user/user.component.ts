@@ -22,14 +22,14 @@ export class UserComponent implements OnInit {
   constructor(private userFetch: UserFetchService) { }
 
   ngOnInit() {
-    this.name = 'Eugene Oluoch';
-    this.login= 'Eugene-Oluoch'; 
-    this.avatar= 'https://avatars.githubusercontent.com/u/95283425?v=4';
-    this.link= 'https://github.com/Eugene-Oluoch';
-    this.bio= 'Aspiring FullStack Developer   (◕‿◕)\r\n#NoBadVibes✨';
-    this.followers= 20;
-    this.following= 20;
-    this.date= '2021-11-30T10:25:39Z';
+    this.name = 'MARTIN OMOLLO';
+    this.login= 'MARTIN-OMOLLO'; 
+    // this.avatar= 'https://avatars.githubusercontent.com/u/95283425?v=2';
+    this.link= 'https://github.com/MARTIN-OMOLLO';
+    this.bio= 'SOFTWARE ENGINEER,(◕‿◕)\For the love of Tech we try again✨';
+    this.followers= 150;
+    this.following= 160;
+    this.date= '2020-12-30T10:15:39Z';
   }
   searchUser(e: any,username: string){
     if(username === ''){
